@@ -4,7 +4,6 @@
 
 CardBase::CardBase(UInt8 cValue, UInt8 color):CCNode(), cardValue(cValue), cardColor(color)
 {
-		CCLog("constrat");
 	drawCard();
 }
 CardBase::~CardBase()
@@ -34,7 +33,7 @@ void CardBase::clearCard()
 
 void CardBase::onEnter()
 {
-	CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 0, true);
+	CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, kCCMenuHandlerPriority, true);
 	CCNode::onEnter();
 }
 
@@ -51,6 +50,7 @@ bool CardBase::ccTouchBegan(CCTouch* touch, CCEvent* event)
 	ccDrawColor4B(255,0,0,255);
 	CCPoint vertices[] = { ccp(0, 0), ccp(50, 50), ccp(100, 50), ccp(100, 100) };
 	ccDrawPoly(vertices, 4, true);
+<<<<<<< HEAD
 
 	//glLineWidth(16);
 	//ccDrawColor4B(0, 255, 0, 255);
@@ -72,6 +72,14 @@ bool CardBase::ccTouchBegan(CCTouch* touch, CCEvent* event)
 //	this->addChild(shadow);
 //	addChild(shadow);
 
+=======
+	
+	ccColor3B b;
+	b.r = 255;
+	b.g = 0;
+	b.b = 0;
+	backGround->setColor(b);
+>>>>>>> origin/master
 	CCLog("ccTouchBegan");
 	return true;
 }
@@ -81,6 +89,11 @@ void CardBase::ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent)
 }
 void CardBase::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
 {
+	ccColor3B b;
+	b.r = 255;
+	b.g = 255;
+	b.b = 255;
+	backGround->setColor(b);
 	CCLog("ccTouchEnded");
 	removeChild(shadow,false);
 }

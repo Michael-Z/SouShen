@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClInclude Include="..\..\Config.h" />
     <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Common\CCard.h" />
+    <ClInclude Include="..\Classes\Common\PlayCard.h" />
+    <ClInclude Include="..\Classes\Common\Rule.h" />
     <ClInclude Include="..\Classes\Game\GameManager.h" />
     <ClInclude Include="..\Classes\Game\TPlayer.h" />
     <ClInclude Include="..\Classes\Packet\Builder.h" />
@@ -157,15 +160,17 @@
     <ClInclude Include="..\Classes\View\GameResources.h" />
     <ClInclude Include="..\Classes\View\Layer\ControllerLayer.h" />
     <ClInclude Include="..\Classes\View\Layer\GameLayer.h" />
+    <ClInclude Include="..\Classes\View\Layer\PlayLayer.h" />
     <ClInclude Include="..\Classes\View\PixelResolution.h" />
     <ClInclude Include="..\Classes\View\Scene\CBaseScene.h" />
     <ClInclude Include="..\Classes\View\Scene\CMenuScene.h" />
     <ClInclude Include="..\Classes\View\Scene\CTestScene.h" />
+    <ClInclude Include="..\Classes\View\Scene\PlayScence.h" />
     <ClInclude Include="..\Classes\View\Sprite\CardBase.h" />
     <ClInclude Include="..\Classes\View\Sprite\CardGeneral.h" />
     <ClInclude Include="..\Classes\View\Sprite\CardKing.h" />
     <ClInclude Include="..\Classes\View\Sprite\CardNormal.h" />
-    <ClInclude Include="..\Classes\View\Sprite\CCard.h" />
+    <ClInclude Include="..\Classes\View\Sprite\CCardSprite.h" />
     <ClInclude Include="..\CocoGUILIB\BaseClasses\Graphics\UIElement.h" />
     <ClInclude Include="..\CocoGUILIB\BaseClasses\Widget\CocoContainerWidget.h" />
     <ClInclude Include="..\CocoGUILIB\BaseClasses\Widget\CocoRootWidget.h" />
@@ -224,6 +229,7 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="..\Classes\Common\PlayCard.cpp" />
     <ClCompile Include="..\Classes\Game\GameManager.cpp" />
     <ClCompile Include="..\Classes\Game\LeftTPlayer.cpp" />
     <ClCompile Include="..\Classes\Game\RightTPlayer.cpp" />
@@ -243,9 +249,11 @@
     <ClCompile Include="..\Classes\View\Button\Button.cpp" />
     <ClCompile Include="..\Classes\View\Layer\ControllerLayer.cpp" />
     <ClCompile Include="..\Classes\View\Layer\GameLayer.cpp" />
+    <ClCompile Include="..\Classes\View\Layer\PlayLayer.cpp" />
     <ClCompile Include="..\Classes\View\Scene\CBaseScene.cpp" />
     <ClCompile Include="..\Classes\View\Scene\CMenuScene.cpp" />
     <ClCompile Include="..\Classes\View\Scene\CTestScene.cpp" />
+    <ClCompile Include="..\Classes\View\Scene\PlayScence.cpp" />
     <ClCompile Include="..\Classes\View\Sprite\CardBase.cpp" />
     <ClCompile Include="..\Classes\View\Sprite\CardGeneral.cpp" />
     <ClCompile Include="..\Classes\View\Sprite\CardKing.cpp" />

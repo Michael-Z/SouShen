@@ -84,6 +84,9 @@
     <Filter Include="Classes\Game">
       <UniqueIdentifier>{4658e21f-cff4-4dff-b096-5543eb11cd8a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Common">
+      <UniqueIdentifier>{b47ab905-cdd7-46e1-bd13-47b259dc94ad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Resources\Default.png">
@@ -358,8 +361,23 @@
     <ClInclude Include="..\Classes\Utils\MobileLog.h">
       <Filter>Classes\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\View\Sprite\CCard.h">
+    <ClInclude Include="..\Classes\Common\PlayCard.h">
+      <Filter>Classes\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\Rule.h">
+      <Filter>Classes\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Common\CCard.h">
+      <Filter>Classes\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View\Sprite\CCardSprite.h">
       <Filter>Classes\Model\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View\Scene\PlayScence.h">
+      <Filter>Classes\Model\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View\Layer\PlayLayer.h">
+      <Filter>Classes\Model\Layer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -575,6 +593,15 @@
     </ClCompile>
     <ClCompile Include="..\Classes\View\Sprite\CardKing.cpp">
       <Filter>Classes\Model\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Common\PlayCard.cpp">
+      <Filter>Classes\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\View\Scene\PlayScence.cpp">
+      <Filter>Classes\Model\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\View\Layer\PlayLayer.cpp">
+      <Filter>Classes\Model\Layer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

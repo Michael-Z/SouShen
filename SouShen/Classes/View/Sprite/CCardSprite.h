@@ -1,34 +1,39 @@
-#ifndef _CCARD_H_
-#define _CCARD_H_
+#ifndef _CCARDSPRITE_H_
+#define _CCARDSPRITE_H_
 #include "CardNormal.h"
 #include "CardGeneral.h"
 #include "CardKing.h"
-class CCard
+#include "../../Common/CCard.h"
+
+
+class CCardSprite : public CCard
 {
 public:
-	CCard() : m_nColor(-1), m_nValue(-1), cardSprite(NULL) {}
-	CCard(int nColor, int nValue) : m_nColor(nColor), m_nValue(nValue) {}
-	CCard (const CCard &srcCard)
+	CCardSprite() :CCard(), cardSprite(NULL) {}
+	CCardSprite(int nColor, int nValue, CardBase *pb) : CCard(nColor, nValue), cardSprite(pb) {}
+	CCardSprite (const CCardSprite &srcCard)
 	{
 		if(this == &srcCard)
 			return;
 		m_nColor = srcCard.m_nColor;
 		m_nValue = srcCard.m_nValue;
+		cardSprite = srcCard.cardSprite;
 	}
-	CCard& operator = (const CCard &srcCard)
+	CCardSprite& operator = (const CCardSprite &srcCard)
 	{
 		if (this == &srcCard)
 			return *this;
 		m_nColor = srcCard.m_nColor;
 		m_nValue = srcCard.m_nValue;
+		cardSprite = srcCard.cardSprite;
 		return *this;
 	}
-	bool operator == (const CCard &srcCard)
+	bool operator == (const CCardSprite &srcCard)
 	{
-		return (m_nColor == srcCard.m_nColor && m_nValue == srcCard.m_nValue);
+		return (m_nColor == srcCard.m_nColor && m_nValue == srcCard.m_nValue && cardSprite == srcCard.cardSprite);
 	}
 public:
-	CardBase* getCardSprite()
+	inline CardBase* getCardSprite()
 	{
 		if (cardSprite != NULL)
 		{
