@@ -98,6 +98,8 @@ void CardNormal::drawCard()
 		LOGERROR<<"card Color error";
 		return;
 	}
+	
+	addChild(shadow);
 }
 void CardNormal::clearCard()
 {

@@ -21,6 +21,7 @@ public:
 	virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
 protected:
 	CCSprite *backGround;
+	CCSprite *shadow;
 protected:
 	UInt8 cardValue;
 	UInt8 cardColor;

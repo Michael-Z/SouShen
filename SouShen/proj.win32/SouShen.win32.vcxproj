@@ -383,7 +383,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\build\system.vcxproj">
-      <Project>{f4325627-8523-794d-8354-adaee335a9f1}</Project>
+      <Project>{1161caf9-a048-7540-a53b-a7ecddabcc5d}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
