@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="resource">
+      <UniqueIdentifier>{f07fffca-41dc-41e6-9b94-0cb83a7f10f4}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{23df8f38-251f-4f4e-b499-5e840bf336cb}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{7bcd0d1d-927d-4ffa-9545-354ab4fed68c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\NetWork">
+      <UniqueIdentifier>{4f7347e4-7679-4489-bd2e-1624101582fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Packet">
+      <UniqueIdentifier>{b1a80182-b58a-43e8-b084-e9d51ec67b09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Packet\Handler">
+      <UniqueIdentifier>{9db1e365-764c-405a-a091-9bb489b0d47c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\TcpNetwork">
+      <UniqueIdentifier>{109db62a-c5f8-49b6-a0a7-a5d39949b0af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Utils">
+      <UniqueIdentifier>{cc26715e-8dc3-477f-a0db-a357851a14e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\View">
+      <UniqueIdentifier>{698eb99b-b463-4a12-b1cd-b7df84c92007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\View\Scene">
+      <UniqueIdentifier>{1b84efc2-d0a3-4e7c-b95e-f6b667fa8fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\View\Layer">
+      <UniqueIdentifier>{894b8b38-17b8-4118-9212-8a2f304f556f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\View\Button">
+      <UniqueIdentifier>{0aa04e0a-8fd1-44ec-974f-e42ca80517a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\View\Sprite">
+      <UniqueIdentifier>{c4148ea4-21e3-4699-8c1d-e848d7e29390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Worker">
+      <UniqueIdentifier>{8a1e3ada-ce1a-4179-83cc-384512fae19b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CocoGUILIB">
+      <UniqueIdentifier>{bf66b72e-bbd2-453c-88f2-c32e54cf0d32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CocoGUILIB\BaseClasses">
+      <UniqueIdentifier>{6c15ea52-2469-497c-8faf-b1ee37d17324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CocoGUILIB\CGraphics">
+      <UniqueIdentifier>{482618ff-1151-4232-b90f-637a630ef618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CocoGUILIB\Component">
+      <UniqueIdentifier>{ac9a6429-ae78-40bb-b458-4696453d2869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CocoGUILIB\System">
+      <UniqueIdentifier>{d7455298-0df7-4157-af44-8a29210f413f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CocoGUILIB\UIElements">
+      <UniqueIdentifier>{17b85f29-d599-4215-b4f8-bb4ffa782ded}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CocoGUILIB\BaseClasses\Graphics">
+      <UniqueIdentifier>{e62d734c-123e-40f4-b32c-592a84017fc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CocoGUILIB\BaseClasses\Widget">
+      <UniqueIdentifier>{ad0a1354-3b81-46b2-870a-1d42d70afb8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CocoGUILIB\System\Json">
+      <UniqueIdentifier>{55e7671d-0f3d-416a-974c-822c6b2f7df4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CocoGUILIB\System\Json\json">
+      <UniqueIdentifier>{f1588593-712f-47aa-becf-526356d14656}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CocoGUILIB\System\Json\lib_json">
+      <UniqueIdentifier>{2216abf1-6d07-4eac-a998-a73dbcc8536e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\Default.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\crop.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\farm.jpg">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\land.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\menu2.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Icon.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\dog.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\menu1.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Classes\Packet\Handler\Handlers.inl">
+      <Filter>Classes\Packet\Handler</Filter>
+    </None>
+    <None Include="..\Classes\Packet\Builder.inl">
+      <Filter>Classes\Packet</Filter>
+    </None>
+    <None Include="res\SouShen.ico">
+      <Filter>resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View\GameManager.h">
+      <Filter>Classes\View</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View\GameResources.h">
+      <Filter>Classes\View</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View\Scene\CBaseScene.h">
+      <Filter>Classes\View\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View\Scene\CMenuScene.h">
+      <Filter>Classes\View\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View\Scene\CTestScene.h">
+      <Filter>Classes\View\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View\Button\Button.h">
+      <Filter>Classes\View\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View\Layer\ControllerLayer.h">
+      <Filter>Classes\View\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View\Layer\GameLayer.h">
+      <Filter>Classes\View\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Utils\CharacterConver.h">
+      <Filter>Classes\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Utils\Singleton.h">
+      <Filter>Classes\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TcpNetwork\ClientNet.h">
+      <Filter>Classes\TcpNetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TcpNetwork\Socket.h">
+      <Filter>Classes\TcpNetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TcpNetwork\TcpSocket.h">
+      <Filter>Classes\TcpNetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TcpNetwork\Utils.h">
+      <Filter>Classes\TcpNetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Packet\Handler\Handler.h">
+      <Filter>Classes\Packet\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Packet\Builder.h">
+      <Filter>Classes\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Packet\Processor.h">
+      <Filter>Classes\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View\PixelResolution.h">
+      <Filter>Classes\View</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\View\GameManager.cpp">
+      <Filter>Classes\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\View\Scene\CBaseScene.cpp">
+      <Filter>Classes\View\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\View\Scene\CMenuScene.cpp">
+      <Filter>Classes\View\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\View\Scene\CTestScene.cpp">
+      <Filter>Classes\View\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\View\Button\Button.cpp">
+      <Filter>Classes\View\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\View\Layer\ControllerLayer.cpp">
+      <Filter>Classes\View\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\View\Layer\GameLayer.cpp">
+      <Filter>Classes\View\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Utils\CharacterConver.cpp">
+      <Filter>Classes\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TcpNetwork\ClientNet.cpp">
+      <Filter>Classes\TcpNetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TcpNetwork\Socket.cpp">
+      <Filter>Classes\TcpNetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TcpNetwork\TcpSocket.cpp">
+      <Filter>Classes\TcpNetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TcpNetwork\Utils.cpp">
+      <Filter>Classes\TcpNetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Packet\Handler\Handler.cpp">
+      <Filter>Classes\Packet\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Packet\AllHandlers.cpp">
+      <Filter>Classes\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Packet\Builder.cpp">
+      <Filter>Classes\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Packet\Packet.cpp">
+      <Filter>Classes\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Packet\Processor.cpp">
+      <Filter>Classes\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SouShen.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
