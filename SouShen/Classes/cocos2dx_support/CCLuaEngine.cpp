@@ -319,9 +319,14 @@ int CCLuaEngine::executeEvent(int nHandler, const char* pEventName, CCObject* pE
 
 bool CCLuaEngine::executeAssert(bool cond, const char *msg/* = NULL */)
 {
-    bool ret = m_stack->executeAssert(cond, msg);
+    bool ret = m_stack->handleAssert(msg);
     m_stack->clean();
     return ret;
+}
+
+bool CCLuaEngine::handleAssert(const char *msg/* = NULL */)
+{
+	return true;
 }
 
 NS_CC_END

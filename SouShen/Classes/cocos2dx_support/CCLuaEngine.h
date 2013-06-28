@@ -111,6 +111,8 @@ public:
     virtual int executeAccelerometerEvent(CCLayer* pLayer, CCAcceleration* pAccelerationValue);
     virtual int executeEvent(int nHandler, const char* pEventName, CCObject* pEventSource = NULL, const char* pEventSourceClassName = NULL);
     virtual bool executeAssert(bool cond, const char *msg = NULL);
+
+	virtual bool handleAssert(const char*);
     
 private:
     CCLuaEngine(void)

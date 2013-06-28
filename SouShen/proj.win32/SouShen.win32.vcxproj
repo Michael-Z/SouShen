@@ -47,7 +47,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..;..\Classes;$(SolutionDir)..\..\cocos2dx;$(SolutionDir)..\..\cocos2dx\include;$(SolutionDir)..\..\cocos2dx\kazmath\include;$(SolutionDir)..\..\cocos2dx\platform\win32;$(SolutionDir)..\..\cocos2dx\platform\third_party\win32;$(SolutionDir)..\..\cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)..\..\CocosDenshion\include;$(SolutionDir)..\..\scripting\lua\cocos2dx_support;$(SolutionDir)..\..\scripting\lua\tolua;$(SolutionDir)..\..\scripting\lua\lua;..\..\Ssu\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;..\Classes;$(SolutionDir)..\..\cocos2dx;$(SolutionDir)..\..\cocos2dx\include;$(SolutionDir)..\..\cocos2dx\kazmath\include;$(SolutionDir)..\..\cocos2dx\platform\win32;$(SolutionDir)..\..\cocos2dx\platform\third_party\win32;$(SolutionDir)..\..\cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)..\..\CocosDenshion\include;$(SolutionDir)..\..\scripting\lua\cocos2dx_support;$(SolutionDir)..\..\scripting\lua\tolua;$(SolutionDir)..\..\scripting\lua\lua;$(ProjectDir)..\..\scripting\lua\src;..\..\Ssu\;..\..\;$(SolutionDir)..\external;$(SolutionDir)..\CocoGUILIB\BaseClasses\Graphics;$(SolutionDir)..\CocoGUILIB\BaseClasses\Widget;$(SolutionDir)..\CocoGUILIB\CGraphics;$(SolutionDir)..\CocoGUILIB\Component;$(SolutionDir)..\CocoGUILIB\System;$(SolutionDir)..\CocoGUILIB\System\Json;$(SolutionDir)..\CocoGUILIB\System\Json\json;$(SolutionDir)..\CocoGUILIB\System\Json\lib_json;$(SolutionDir)..\CocoGUILIB\UIElements;$(SolutionDir)..\..\extensions\GUI\CCControlExtension;$(SolutionDir)..\..\extensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -64,7 +64,7 @@
       <TargetMachine>MachineX86</TargetMachine>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(SolutionDir)..\..\lib\libcocos2d.lib;opengl32.lib;$(SolutionDir)..\..\lib\glew32.lib;$(SolutionDir)..\..\lib\libCocosDenshion.lib;$(SolutionDir)..\..\lib\liblua.lib;$(SolutionDir)..\..\lib\lua51.lib;$(SolutionDir)..\..\lib\libiconv.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)..\..\lib\libcocos2d.lib;opengl32.lib;$(SolutionDir)..\..\lib\glew32.lib;$(SolutionDir)..\..\lib\libCocosDenshion.lib;$(SolutionDir)..\..\lib\liblua.lib;$(SolutionDir)..\..\lib\lua51.lib;$(SolutionDir)..\..\lib\libiconv.lib;$(SolutionDir)..\..\lib\libExtensions.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ResourceCompile>
       <Culture>0x0409</Culture>
@@ -125,6 +125,9 @@
   <ItemGroup>
     <None Include="..\Classes\Packet\Builder.inl" />
     <None Include="..\Classes\Packet\Handler\Handlers.inl" />
+    <None Include="..\CocoGUILIB\System\Json\lib_json\json_internalarray.inl" />
+    <None Include="..\CocoGUILIB\System\Json\lib_json\json_internalmap.inl" />
+    <None Include="..\CocoGUILIB\System\Json\lib_json\json_valueiterator.inl" />
     <None Include="..\Resources\crop.png" />
     <None Include="..\Resources\Default.png" />
     <None Include="..\Resources\dog.png" />
@@ -136,6 +139,7 @@
     <None Include="res\SouShen.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Config.h" />
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\Packet\Builder.h" />
     <ClInclude Include="..\Classes\Packet\Handler\Handler.h" />
@@ -155,10 +159,64 @@
     <ClInclude Include="..\Classes\View\Scene\CBaseScene.h" />
     <ClInclude Include="..\Classes\View\Scene\CMenuScene.h" />
     <ClInclude Include="..\Classes\View\Scene\CTestScene.h" />
+    <ClInclude Include="..\CocoGUILIB\BaseClasses\Graphics\UIElement.h" />
+    <ClInclude Include="..\CocoGUILIB\BaseClasses\Widget\CocoContainerWidget.h" />
+    <ClInclude Include="..\CocoGUILIB\BaseClasses\Widget\CocoRootWidget.h" />
+    <ClInclude Include="..\CocoGUILIB\BaseClasses\Widget\CocoWidget.h" />
+    <ClInclude Include="..\CocoGUILIB\CGraphics\CClipAbleLayerColor.h" />
+    <ClInclude Include="..\CocoGUILIB\CGraphics\CClipAbleSprite.h" />
+    <ClInclude Include="..\CocoGUILIB\CGraphics\CLabelAtlas.h" />
+    <ClInclude Include="..\CocoGUILIB\CGraphics\CPrimitivesNode.h" />
+    <ClInclude Include="..\CocoGUILIB\CGraphics\CRenderNode.h" />
+    <ClInclude Include="..\CocoGUILIB\CGraphics\CTextField.h" />
+    <ClInclude Include="..\CocoGUILIB\CGraphics\GUINodeRGBA.h" />
+    <ClInclude Include="..\CocoGUILIB\Component\CocoButton.h" />
+    <ClInclude Include="..\CocoGUILIB\Component\CocoCheckBox.h" />
+    <ClInclude Include="..\CocoGUILIB\Component\CocoImageButton.h" />
+    <ClInclude Include="..\CocoGUILIB\Component\CocoImageView.h" />
+    <ClInclude Include="..\CocoGUILIB\Component\CocoLabel.h" />
+    <ClInclude Include="..\CocoGUILIB\Component\CocoLabelAtlas.h" />
+    <ClInclude Include="..\CocoGUILIB\Component\CocoListView.h" />
+    <ClInclude Include="..\CocoGUILIB\Component\CocoLoadingBar.h" />
+    <ClInclude Include="..\CocoGUILIB\Component\CocoPanel.h" />
+    <ClInclude Include="..\CocoGUILIB\Component\CocoScrollView.h" />
+    <ClInclude Include="..\CocoGUILIB\Component\CocoSlider.h" />
+    <ClInclude Include="..\CocoGUILIB\Component\CocoTextArea.h" />
+    <ClInclude Include="..\CocoGUILIB\Component\CocoTextButton.h" />
+    <ClInclude Include="..\CocoGUILIB\Component\CocoTextField.h" />
+    <ClInclude Include="..\CocoGUILIB\System\CCSReader.h" />
+    <ClInclude Include="..\CocoGUILIB\System\CocoStudioGUI.h" />
+    <ClInclude Include="..\CocoGUILIB\System\DictionaryHelper.h" />
+    <ClInclude Include="..\CocoGUILIB\System\InputLayer.h" />
+    <ClInclude Include="..\CocoGUILIB\System\Json\CSContentJsonDictionary.h" />
+    <ClInclude Include="..\CocoGUILIB\System\Json\json\autolink.h" />
+    <ClInclude Include="..\CocoGUILIB\System\Json\json\config.h" />
+    <ClInclude Include="..\CocoGUILIB\System\Json\json\features.h" />
+    <ClInclude Include="..\CocoGUILIB\System\Json\json\forwards.h" />
+    <ClInclude Include="..\CocoGUILIB\System\Json\json\json_lib.h" />
+    <ClInclude Include="..\CocoGUILIB\System\Json\json\reader.h" />
+    <ClInclude Include="..\CocoGUILIB\System\Json\json\value.h" />
+    <ClInclude Include="..\CocoGUILIB\System\Json\json\writer.h" />
+    <ClInclude Include="..\CocoGUILIB\System\Json\lib_json\json_batchallocator.h" />
+    <ClInclude Include="..\CocoGUILIB\System\Json\lib_json\json_tool.h" />
+    <ClInclude Include="..\CocoGUILIB\System\UIInputManager.h" />
+    <ClInclude Include="..\CocoGUILIB\System\UIScene.h" />
+    <ClInclude Include="..\CocoGUILIB\System\UISystem.h" />
+    <ClInclude Include="..\CocoGUILIB\UIElements\UILabelAtlas.h" />
+    <ClInclude Include="..\CocoGUILIB\UIElements\UIScale9Sprite.h" />
+    <ClInclude Include="..\CocoGUILIB\UIElements\UISprite.h" />
+    <ClInclude Include="..\CocoGUILIB\UIElements\UIText.h" />
+    <ClInclude Include="..\CocoGUILIB\UIElements\UITextArea.h" />
+    <ClInclude Include="..\CocoGUILIB\UIElements\UITextField.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\..\Config.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="..\Classes\Packet\AllHandlers.cpp" />
     <ClCompile Include="..\Classes\Packet\Builder.cpp" />
     <ClCompile Include="..\Classes\Packet\Handler\Handler.cpp" />
@@ -176,6 +234,132 @@
     <ClCompile Include="..\Classes\View\Scene\CBaseScene.cpp" />
     <ClCompile Include="..\Classes\View\Scene\CMenuScene.cpp" />
     <ClCompile Include="..\Classes\View\Scene\CTestScene.cpp" />
+    <ClCompile Include="..\CocoGUILIB\BaseClasses\Graphics\UIElement.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\BaseClasses\Widget\CocoContainerWidget.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\BaseClasses\Widget\CocoRootWidget.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\BaseClasses\Widget\CocoWidget.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\CGraphics\CClipAbleLayerColor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\CGraphics\CClipAbleSprite.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\CGraphics\CLabelAtlas.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\CGraphics\CPrimitivesNode.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\CGraphics\CRenderNode.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\CGraphics\CTextField.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\CGraphics\GUINodeRGBA.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\Component\CocoButton.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\Component\CocoCheckBox.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\Component\CocoImageButton.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\Component\CocoImageView.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\Component\CocoLabel.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\Component\CocoLabelAtlas.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\Component\CocoListView.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\Component\CocoLoadingBar.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\Component\CocoPanel.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\Component\CocoScrollView.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\Component\CocoSlider.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\Component\CocoTextArea.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\Component\CocoTextButton.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\Component\CocoTextField.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\System\CCSReader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\System\CocoStudioGUI.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\System\DictionaryHelper.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\System\InputLayer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\System\Json\CSContentJsonDictionary.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\System\Json\lib_json\json_reader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\System\Json\lib_json\json_value.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\System\Json\lib_json\json_writer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\System\UIInputManager.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\System\UIScene.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\System\UISystem.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\UIElements\UILabelAtlas.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\UIElements\UIScale9Sprite.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\UIElements\UISprite.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\UIElements\UIText.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\UIElements\UITextArea.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\CocoGUILIB\UIElements\UITextField.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
