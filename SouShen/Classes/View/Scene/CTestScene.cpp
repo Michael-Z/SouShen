@@ -12,7 +12,7 @@ namespace View
 
 		CCLayer *testLayer = CCLayer::create();
 	
-		CCSprite *pbgSprite = CCSprite::create(s_pPathBackGround1);
+		CCSprite *pbgSprite = CCSprite::create("Images/BackGround/background_2.jpg");
 
 		CCLabelTTF* label = CCLabelTTF::create("first scene", "Arial", 20);
 		//#endif
@@ -29,6 +29,30 @@ namespace View
 		testLayer->scheduleOnce(schedule_selector(CTestScene::ShowOtherScene), 3.0f);
 
 		this->addChild(testLayer);
+
+		//add animation
+		CCSpriteFrameCache *cache = CCSpriteFrameCache::sharedSpriteFrameCache();
+		cache->addSpriteFramesWithFile("Images/animation/chooserole/mt/chooserole_mt_part1.plist");
+		CCSprite *plistSprite=CCSprite::createWithSpriteFrameName("Images/animation/chooserole/mt/chooserole_mt_part1.png");
+		testLayer->addChild(plistSprite);
+		plistSprite->setPosition(ccp(CCDirector::sharedDirector()->getWinSize().width-plistSprite->getContentSize().width,CCDirector::sharedDirector()->getWinSize().height/2));
+
+		//为帧创建图片
+		CCArray *walkFrames = CCArray::createWithCapacity(7);
+		for (int i = 1; i <= 7; i++)  
+		{  
+			CCSpriteFrame *frame = cache->spriteFrameByName(CCString::createWithFormat("chooserole_mt_part%d.png", i)->getCString());  
+			walkFrames->addObject(frame);  
+		}  
+
+		// 创建动画  
+		CCAnimation *walkAnimation = CCAnimation::createWithSpriteFrames(walkFrames, 1.0f / 12.0f);  
+		//CC_BREAK_IF(!walkAnimation);  
+		CCAnimate* walkAnimate = CCAnimate::create(walkAnimation);  
+		//CC_BREAK_IF(!walkAnimate);  
+
+		// 运行动画动作  
+		plistSprite->runAction(CCRepeatForever::create(walkAnimate));  
 
 		testLayer->setTouchEnabled(true);
 	}
