@@ -26,27 +26,47 @@ namespace View
 
 		testLayer->addChild(pbgSprite);
 		testLayer->addChild(pMenu);
-		testLayer->scheduleOnce(schedule_selector(CTestScene::ShowOtherScene), 3.0f);
+		testLayer->scheduleOnce(schedule_selector(CTestScene::ShowOtherScene), 10.0f);
 
 		this->addChild(testLayer);
 
 		//add animation
 		CCSpriteFrameCache *cache = CCSpriteFrameCache::sharedSpriteFrameCache();
 		cache->addSpriteFramesWithFile("Images/animation/chooserole/mt/chooserole_mt_part1.plist");
-		CCSprite *plistSprite=CCSprite::createWithSpriteFrameName("Images/animation/chooserole/mt/chooserole_mt_part1.png");
+		cache->addSpriteFramesWithFile("Images/animation/chooserole/mt/chooserole_mt_part2.plist");
+		//cache->addSpriteFramesWithFile("Images/animation/chooserole/mt/skill_tenarmy.plist");
+		
+
+		CCSprite *plistSprite=CCSprite::createWithSpriteFrameName("mt_0001.png");
+		//CCSprite *plistSprite=CCSprite::createWithSpriteFrameName("tenarmy_01.png");
+
 		testLayer->addChild(plistSprite);
-		plistSprite->setPosition(ccp(CCDirector::sharedDirector()->getWinSize().width-plistSprite->getContentSize().width,CCDirector::sharedDirector()->getWinSize().height/2));
+		plistSprite->setPosition(ccp(CCDirector::sharedDirector()->getWinSize().width/2,CCDirector::sharedDirector()->getWinSize().height/2 + plistSprite->getContentSize().width));
 
 		//为帧创建图片
-		CCArray *walkFrames = CCArray::createWithCapacity(7);
-		for (int i = 1; i <= 7; i++)  
+		CCArray *walkFrames = CCArray::createWithCapacity(11);
+		for (int i = 1; i <= 11; i++)  
 		{  
-			CCSpriteFrame *frame = cache->spriteFrameByName(CCString::createWithFormat("chooserole_mt_part%d.png", i)->getCString());  
+			CCSpriteFrame *frame;
+			//if (i == 4 || i == 6 || i == 8)
+			//{
+			//	continue;
+			//}
+			if (i < 10)
+			{
+				frame = cache->spriteFrameByName(CCString::createWithFormat("mt_000%d.png", i)->getCString());   
+			}
+			else
+			{
+				frame = cache->spriteFrameByName(CCString::createWithFormat("mt_00%d.png", i)->getCString());  
+			}
+
+
 			walkFrames->addObject(frame);  
 		}  
 
 		// 创建动画  
-		CCAnimation *walkAnimation = CCAnimation::createWithSpriteFrames(walkFrames, 1.0f / 12.0f);  
+		CCAnimation *walkAnimation = CCAnimation::createWithSpriteFrames(walkFrames, 1.0f / 15.0f);  
 		//CC_BREAK_IF(!walkAnimation);  
 		CCAnimate* walkAnimate = CCAnimate::create(walkAnimation);  
 		//CC_BREAK_IF(!walkAnimate);  
