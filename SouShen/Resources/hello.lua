@@ -33,7 +33,7 @@ local function main()
         local textureDog = CCTextureCache:sharedTextureCache():addImage("dog.png")
         local rect = CCRectMake(0, 0, frameWidth, frameHeight)
         local frame0 = CCSpriteFrame:createWithTexture(textureDog, rect)
-        rect = CCRectMake(frameWidth, 0, frameWidth, frameHeight)
+        --rect = CCRectMake(frameWidth, 0, frameWidth, frameHeight)
         local frame1 = CCSpriteFrame:createWithTexture(textureDog, rect)
 
         local spriteDog = CCSprite:createWithSpriteFrame(frame0)
@@ -43,7 +43,7 @@ local function main()
         local animFrames = CCArray:create()
 
         animFrames:addObject(frame0)
-        animFrames:addObject(frame1)
+        --animFrames:addObject(frame1)
 
         local animation = CCAnimation:createWithSpriteFrames(animFrames, 0.5)
         local animate = CCAnimate:create(animation);
@@ -62,7 +62,7 @@ local function main()
             spriteDog:setPositionX(x)
         end
 
-        CCDirector:sharedDirector():getScheduler():scheduleScriptFunc(tick, 0, false)
+       -- CCDirector:sharedDirector():getScheduler():scheduleScriptFunc(tick, 0, false)
 
         return spriteDog
     end
@@ -188,10 +188,10 @@ local function main()
 
     -- uncomment below for the BlackBerry version
     -- local bgMusicPath = CCFileUtils:sharedFileUtils():fullPathForFilename("background.ogg")
-    local bgMusicPath = CCFileUtils:sharedFileUtils():fullPathForFilename("background.mp3")
-    SimpleAudioEngine:sharedEngine():playBackgroundMusic(bgMusicPath, true)
-    local effectPath = CCFileUtils:sharedFileUtils():fullPathForFilename("effect1.wav")
-    SimpleAudioEngine:sharedEngine():preloadEffect(effectPath)
+    --local bgMusicPath = CCFileUtils:sharedFileUtils():fullPathForFilename("background.mp3")
+    --SimpleAudioEngine:sharedEngine():playBackgroundMusic(bgMusicPath, true)
+    --local effectPath = CCFileUtils:sharedFileUtils():fullPathForFilename("effect1.wav")
+    --SimpleAudioEngine:sharedEngine():preloadEffect(effectPath)
 
     -- run
     local sceneGame = CCScene:create()

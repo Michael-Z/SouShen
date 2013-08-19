@@ -27,21 +27,6 @@
     <Filter Include="Classes\Utils">
       <UniqueIdentifier>{cc26715e-8dc3-477f-a0db-a357851a14e0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\View">
-      <UniqueIdentifier>{698eb99b-b463-4a12-b1cd-b7df84c92007}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Classes\View\Scene">
-      <UniqueIdentifier>{1b84efc2-d0a3-4e7c-b95e-f6b667fa8fba}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Classes\View\Layer">
-      <UniqueIdentifier>{894b8b38-17b8-4118-9212-8a2f304f556f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Classes\View\Button">
-      <UniqueIdentifier>{0aa04e0a-8fd1-44ec-974f-e42ca80517a2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Classes\View\Sprite">
-      <UniqueIdentifier>{c4148ea4-21e3-4699-8c1d-e848d7e29390}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Classes\Worker">
       <UniqueIdentifier>{8a1e3ada-ce1a-4179-83cc-384512fae19b}</UniqueIdentifier>
     </Filter>
@@ -77,6 +62,27 @@
     </Filter>
     <Filter Include="CocoGUILIB\System\Json\lib_json">
       <UniqueIdentifier>{2216abf1-6d07-4eac-a998-a73dbcc8536e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Model">
+      <UniqueIdentifier>{698eb99b-b463-4a12-b1cd-b7df84c92007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Model\Scene">
+      <UniqueIdentifier>{1b84efc2-d0a3-4e7c-b95e-f6b667fa8fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Model\Layer">
+      <UniqueIdentifier>{894b8b38-17b8-4118-9212-8a2f304f556f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Model\Button">
+      <UniqueIdentifier>{0aa04e0a-8fd1-44ec-974f-e42ca80517a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Model\Sprite">
+      <UniqueIdentifier>{c4148ea4-21e3-4699-8c1d-e848d7e29390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\View">
+      <UniqueIdentifier>{774ea500-05eb-4961-bbb8-47bb57406f2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Game">
+      <UniqueIdentifier>{4658e21f-cff4-4dff-b096-5543eb11cd8a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -128,28 +134,28 @@
       <Filter>Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\View\GameManager.h">
-      <Filter>Classes\View</Filter>
+      <Filter>Classes\Model</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\View\GameResources.h">
-      <Filter>Classes\View</Filter>
+      <Filter>Classes\Model</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\View\Scene\CBaseScene.h">
-      <Filter>Classes\View\Scene</Filter>
+      <Filter>Classes\Model\Scene</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\View\Scene\CMenuScene.h">
-      <Filter>Classes\View\Scene</Filter>
+      <Filter>Classes\Model\Scene</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\View\Scene\CTestScene.h">
-      <Filter>Classes\View\Scene</Filter>
+      <Filter>Classes\Model\Scene</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\View\Button\Button.h">
-      <Filter>Classes\View\Button</Filter>
+      <Filter>Classes\Model\Button</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\View\Layer\ControllerLayer.h">
-      <Filter>Classes\View\Layer</Filter>
+      <Filter>Classes\Model\Layer</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\View\Layer\GameLayer.h">
-      <Filter>Classes\View\Layer</Filter>
+      <Filter>Classes\Model\Layer</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Utils\CharacterConver.h">
       <Filter>Classes\Utils</Filter>
@@ -179,7 +185,7 @@
       <Filter>Classes\Packet</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\View\PixelResolution.h">
-      <Filter>Classes\View</Filter>
+      <Filter>Classes\Model</Filter>
     </ClInclude>
     <ClInclude Include="main.h">
       <Filter>win32</Filter>
@@ -334,28 +340,31 @@
     <ClInclude Include="..\CocoGUILIB\System\UISystem.h">
       <Filter>CocoGUILIB\System</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Game\TPlayer.h">
+      <Filter>Classes\Game</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\View\GameManager.cpp">
-      <Filter>Classes\View</Filter>
+      <Filter>Classes\Model</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\View\Scene\CBaseScene.cpp">
-      <Filter>Classes\View\Scene</Filter>
+      <Filter>Classes\Model\Scene</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\View\Scene\CMenuScene.cpp">
-      <Filter>Classes\View\Scene</Filter>
+      <Filter>Classes\Model\Scene</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\View\Scene\CTestScene.cpp">
-      <Filter>Classes\View\Scene</Filter>
+      <Filter>Classes\Model\Scene</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\View\Button\Button.cpp">
-      <Filter>Classes\View\Button</Filter>
+      <Filter>Classes\Model\Button</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\View\Layer\ControllerLayer.cpp">
-      <Filter>Classes\View\Layer</Filter>
+      <Filter>Classes\Model\Layer</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\View\Layer\GameLayer.cpp">
-      <Filter>Classes\View\Layer</Filter>
+      <Filter>Classes\Model\Layer</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Utils\CharacterConver.cpp">
       <Filter>Classes\Utils</Filter>
@@ -521,6 +530,21 @@
     </ClCompile>
     <ClCompile Include="..\CocoGUILIB\System\UISystem.cpp">
       <Filter>CocoGUILIB\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\LeftTPlayer.cpp">
+      <Filter>Classes\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\RightTPlayer.cpp">
+      <Filter>Classes\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\SelfTPlayer.cpp">
+      <Filter>Classes\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\TopTPlayer.cpp">
+      <Filter>Classes\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\TPlayer.cpp">
+      <Filter>Classes\Game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
