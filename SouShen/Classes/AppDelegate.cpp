@@ -44,18 +44,19 @@ bool AppDelegate::applicationDidFinishLaunching()
     pDirector->setAnimationInterval(1.0 / 60);
 
     // register lua engine
-    //CCLuaEngine* pEngine = CCLuaEngine::defaultEngine();
-    //CCScriptEngineManager::sharedManager()->setScriptEngine(pEngine);
+    CCLuaEngine* pEngine = CCLuaEngine::defaultEngine();
+    CCScriptEngineManager::sharedManager()->setScriptEngine(pEngine);
 
-    //std::string path = CCFileUtils::sharedFileUtils()->fullPathForFilename("hello.lua");
-    //pEngine->executeScriptFile(path.c_str());
+    std::string path = CCFileUtils::sharedFileUtils()->fullPathForFilename("hello.lua");
+    pEngine->executeScriptFile(path.c_str());
 
-	View::_gamemanager::instance()->DisplayNowScene(View::SCENE_INIT);
+	//set first sence
+	//View::_gamemanager::instance()->DisplayNowScene(View::SCENE_INIT);
 
-	TcpNetWork::_clientnet.connect("192.168.0.106", 4444, 50);
-	Packet::UserLogin ulogin;
-	ulogin.setResult(1);
-	ulogin.send();
+	//TcpNetWork::_clientnet.connect("192.168.0.106", 4444, 50);
+	//Packet::UserLogin ulogin;
+	//ulogin.setResult(1);
+	//ulogin.send();
 
     return true;
 }
