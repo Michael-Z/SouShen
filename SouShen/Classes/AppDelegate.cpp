@@ -52,10 +52,10 @@ bool AppDelegate::applicationDidFinishLaunching()
 
 	View::_gamemanager::instance()->DisplayNowScene(View::SCENE_INIT);
 
-	TcpNetWork::_clientnet.connect("192.168.0.106", 4444, 50);
-	Packet::UserLogin ulogin;
-	ulogin.setResult(1);
-	ulogin.send();
+	//TcpNetWork::_clientnet.connect("192.168.0.101", 4444, 50);
+	//Packet::UserLogin ulogin;
+	//ulogin.setResult(1);
+	//ulogin.send();
 
     return true;
 }

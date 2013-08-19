@@ -25,7 +25,7 @@
 /*∫·∆¡*/
 #define  Horizontal 0   
 #define  Vertical 1
-#define  HorizontalorVertiacal Vertical
+#define  HorizontalorVertiacal Horizontal
 #if(HorizontalorVertiacal == Horizontal )  //begin Horizontal solution***********************************************
 #define DESIGN_RESOLUTION_480X320    0
 #define DESIGN_RESOLUTION_960X640    1
@@ -34,7 +34,7 @@
 #define DESIGN_RESOLUTION_2048X1536  4
 
 /* If you want to switch design resolution, change next line */
-#define TARGET_DESIGN_RESOLUTION_SIZE  DESIGN_RESOLUTION_480X320
+#define TARGET_DESIGN_RESOLUTION_SIZE  DESIGN_RESOLUTION_960X640
 
 typedef struct tagResource
 {

@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\Config.h" />
     <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Game\Tplayer.h" />
     <ClInclude Include="..\Classes\Packet\Builder.h" />
     <ClInclude Include="..\Classes\Packet\Handler\Handler.h" />
     <ClInclude Include="..\Classes\Packet\Processor.h" />
@@ -217,6 +218,7 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="..\Classes\Game\Tplayer.cpp" />
     <ClCompile Include="..\Classes\Packet\AllHandlers.cpp" />
     <ClCompile Include="..\Classes\Packet\Builder.cpp" />
     <ClCompile Include="..\Classes\Packet\Handler\Handler.cpp" />
