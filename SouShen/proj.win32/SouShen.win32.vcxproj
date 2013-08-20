@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\Config.h" />
     <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Game\GameManager.h" />
     <ClInclude Include="..\Classes\Game\TPlayer.h" />
     <ClInclude Include="..\Classes\Packet\Builder.h" />
     <ClInclude Include="..\Classes\Packet\Handler\Handler.h" />
@@ -152,7 +153,6 @@
     <ClInclude Include="..\Classes\Utils\CharacterConver.h" />
     <ClInclude Include="..\Classes\Utils\Singleton.h" />
     <ClInclude Include="..\Classes\View\Button\Button.h" />
-    <ClInclude Include="..\Classes\View\GameManager.h" />
     <ClInclude Include="..\Classes\View\GameResources.h" />
     <ClInclude Include="..\Classes\View\Layer\ControllerLayer.h" />
     <ClInclude Include="..\Classes\View\Layer\GameLayer.h" />
@@ -218,6 +218,7 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="..\Classes\Game\GameManager.cpp" />
     <ClCompile Include="..\Classes\Game\LeftTPlayer.cpp" />
     <ClCompile Include="..\Classes\Game\RightTPlayer.cpp" />
     <ClCompile Include="..\Classes\Game\SelfTPlayer.cpp" />
@@ -234,7 +235,6 @@
     <ClCompile Include="..\Classes\TcpNetwork\Utils.cpp" />
     <ClCompile Include="..\Classes\Utils\CharacterConver.cpp" />
     <ClCompile Include="..\Classes\View\Button\Button.cpp" />
-    <ClCompile Include="..\Classes\View\GameManager.cpp" />
     <ClCompile Include="..\Classes\View\Layer\ControllerLayer.cpp" />
     <ClCompile Include="..\Classes\View\Layer\GameLayer.cpp" />
     <ClCompile Include="..\Classes\View\Scene\CBaseScene.cpp" />

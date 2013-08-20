@@ -1,6 +1,6 @@
 ﻿#include "Config.h"
 #include "CMenuScene.h"
-#include "../GameManager.h"
+#include "../../Game/GameManager.h"
 #include "../GameResources.h"
 
 namespace View

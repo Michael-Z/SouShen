@@ -133,12 +133,6 @@
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\View\GameManager.h">
-      <Filter>Classes\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\View\GameResources.h">
-      <Filter>Classes\Model</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\View\Scene\CBaseScene.h">
       <Filter>Classes\Model\Scene</Filter>
     </ClInclude>
@@ -183,9 +177,6 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Packet\Processor.h">
       <Filter>Classes\Packet</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\View\PixelResolution.h">
-      <Filter>Classes\Model</Filter>
     </ClInclude>
     <ClInclude Include="main.h">
       <Filter>win32</Filter>
@@ -343,11 +334,17 @@
     <ClInclude Include="..\Classes\Game\TPlayer.h">
       <Filter>Classes\Game</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Game\GameManager.h">
+      <Filter>Classes\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View\GameResources.h">
+      <Filter>Classes\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View\PixelResolution.h">
+      <Filter>Classes\Model</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Classes\View\GameManager.cpp">
-      <Filter>Classes\Model</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\View\Scene\CBaseScene.cpp">
       <Filter>Classes\Model\Scene</Filter>
     </ClCompile>
@@ -544,6 +541,9 @@
       <Filter>Classes\Game</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Game\TPlayer.cpp">
+      <Filter>Classes\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\GameManager.cpp">
       <Filter>Classes\Game</Filter>
     </ClCompile>
   </ItemGroup>
