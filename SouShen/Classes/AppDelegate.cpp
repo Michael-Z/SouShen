@@ -35,7 +35,7 @@ bool AppDelegate::applicationDidFinishLaunching()
 	pEGLView->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, kResolutionNoBorder);
 
 	//set ScaleFactor
-	pDirector->setContentScaleFactor( 640 / designResolutionSize.width);
+	//pDirector->setContentScaleFactor( 640 / designResolutionSize.width);
 
     // turn on display FPS
     pDirector->setDisplayStats(true);
