@@ -97,14 +97,14 @@ namespace View
 		testLayer->addChild(pbgSprite);
 		testLayer->addChild(pMenu);
 
-		this->addChild(testLayer);
+		//this->addChild(testLayer);
 
 
 		CCTexture2D *pTexture = CCTextureCache::sharedTextureCache()->addImage(s_pPathDDZMainGame0);
 		CCSprite *pSprite;
-		pSprite = CCSprite::createWithTexture(pTexture, CCRect(200, 200, 300, 300));
+		pSprite = CCSprite::createWithTexture(pTexture, CCRect(200, 200, 500, 500));
 		testLayer->addChild(pSprite);
-		pSprite->setPosition(CCPoint(200, 200));
+		pSprite->setPosition(CCPoint(500, 500));
 	}
 
 	void CTestScene::runThisScene( )
