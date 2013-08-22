@@ -97,7 +97,7 @@ namespace View
 		testLayer->addChild(pbgSprite);
 		testLayer->addChild(pMenu);
 
-		//this->addChild(testLayer);
+		this->addChild(testLayer);
 
 
 		CCTexture2D *pTexture = CCTextureCache::sharedTextureCache()->addImage(s_pPathDDZMainGame0);
