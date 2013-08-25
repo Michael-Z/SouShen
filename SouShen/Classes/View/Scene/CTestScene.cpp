@@ -82,7 +82,7 @@ namespace View
 
 		CCLayer *testLayer = CCLayer::create();
 	
-		CCSprite *pbgSprite = CCSprite::create("Images/BackGround/background_2.jpg");
+		CCSprite *pbgSprite = CCSprite::create(s_pPathBackGround3);
 
 		CCLabelTTF* label = CCLabelTTF::create("first scene", "Arial", 20);
 		//#endif
@@ -103,13 +103,40 @@ namespace View
 		CCTexture2D *pTexture = CCTextureCache::sharedTextureCache()->addImage(s_pPathDDZMainGame0);
 		CCSprite *pSprite;
 		CCSprite *pSpriteA;
+		CCSprite *pSpriteB;
+		CCSprite *pSpriteC;
+		CCSprite *pSpriteD;
 		pSprite = CCSprite::createWithTexture(pTexture, CCRect(3, 130, 123, 160));
-		pSpriteA = CCSprite::createWithTexture(pTexture, CCRect(0, 0, 34, 43)); 
-		pSpriteA->setAnchorPoint(CCPoint(0, 0));
+		pSpriteA = CCSprite::createWithTexture(pTexture, CCRect(0, 0, 40, 40)); 
+		pSpriteB = CCSprite::createWithTexture(pTexture, CCRect(0, 0, 40, 40));
+		
+		pSpriteC = CCSprite::createWithTexture(pTexture, CCRect(274, 215, 28, 30)); 
+		pSpriteD = CCSprite::createWithTexture(pTexture, CCRect(274, 215, 28, 30));
+
 		pSprite->addChild(pSpriteA);
-		pSpriteA->setPosition(CCPoint(0, 110));
+		pSpriteA->setAnchorPoint(CCPoint(0, 0));
+		pSpriteA->setPosition(CCPoint(0, 115));
+
+		pSprite->addChild(pSpriteB);
+		pSpriteB->setAnchorPoint(CCPoint(0, 0));
+		pSpriteB->setPosition(CCPoint(85, 5));
+		pSpriteB->setFlipY(true);
+
+		pSprite->addChild(pSpriteC);
+		pSpriteC->setAnchorPoint(CCPoint(0, 0));
+		pSpriteC->setPosition(CCPoint(5, 85));
+
+		pSprite->addChild(pSpriteD);
+		pSpriteD->setAnchorPoint(CCPoint(0, 0));
+		pSpriteD->setPosition(CCPoint(90, 47));
+		pSpriteD->setFlipY(true);
+
+
 		testLayer->addChild(pSprite);
-		pSprite->setPosition(CCPoint(500, 500));
+		pSprite->setAnchorPoint(CCPoint(0, 0));
+		pSprite->setPosition(CCPoint(origin.x + 100, origin.y+100));
+
+
 	}
 
 	void CTestScene::runThisScene( )
