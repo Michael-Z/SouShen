@@ -82,7 +82,7 @@ namespace View
 
 		CCLayer *testLayer = CCLayer::create();
 	
-		CCSprite *pbgSprite = CCSprite::create("Images/BackGround/background_2.jpg");
+		CCSprite *pbgSprite = CCSprite::create(s_pPathBackGround3);
 
 		CCLabelTTF* label = CCLabelTTF::create("first scene", "Arial", 20);
 		//#endif
@@ -100,9 +100,14 @@ namespace View
 		this->addChild(testLayer);
 
 
-		CCTexture2D *pTexture = CCTextureCache::sharedTextureCache()->addImage(s_pPathDDZMainGame0);
+ 		CCTexture2D *pTexture = CCTextureCache::sharedTextureCache()->addImage(s_pPathDDZMainGame0);
 		CCSprite *pSprite;
-		pSprite = CCSprite::createWithTexture(pTexture, CCRect(200, 200, 500, 500));
+		CCSprite *pSpriteA;
+		pSprite = CCSprite::createWithTexture(pTexture, CCRect(3, 130, 123, 160));
+		pSpriteA = CCSprite::createWithTexture(pTexture, CCRect(0, 0, 34, 43)); 
+		pSpriteA->setAnchorPoint(CCPoint(0, 0));
+		pSprite->addChild(pSpriteA);
+		pSpriteA->setPosition(CCPoint(0, 110));
 		testLayer->addChild(pSprite);
 		pSprite->setPosition(CCPoint(500, 500));
 	}
