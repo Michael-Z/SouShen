@@ -136,7 +136,6 @@ namespace View
 		pSprite->setAnchorPoint(CCPoint(0, 0));
 		pSprite->setPosition(CCPoint(origin.x + 100, origin.y+100));
 
-
 	}
 
 	void CTestScene::runThisScene( )
