@@ -160,6 +160,8 @@
     <ClInclude Include="..\Classes\View\Scene\CBaseScene.h" />
     <ClInclude Include="..\Classes\View\Scene\CMenuScene.h" />
     <ClInclude Include="..\Classes\View\Scene\CTestScene.h" />
+    <ClInclude Include="..\Classes\View\Sprite\CardBase.h" />
+    <ClInclude Include="..\Classes\View\Sprite\CardNormal.h" />
     <ClInclude Include="..\Classes\View\Sprite\CardSprite.h" />
     <ClInclude Include="..\CocoGUILIB\BaseClasses\Graphics\UIElement.h" />
     <ClInclude Include="..\CocoGUILIB\BaseClasses\Widget\CocoContainerWidget.h" />
@@ -241,6 +243,8 @@
     <ClCompile Include="..\Classes\View\Scene\CBaseScene.cpp" />
     <ClCompile Include="..\Classes\View\Scene\CMenuScene.cpp" />
     <ClCompile Include="..\Classes\View\Scene\CTestScene.cpp" />
+    <ClCompile Include="..\Classes\View\Sprite\CardBase.cpp" />
+    <ClCompile Include="..\Classes\View\Sprite\CardNormal.cpp" />
     <ClCompile Include="..\Classes\View\Sprite\CardSprite.cpp" />
     <ClCompile Include="..\CocoGUILIB\BaseClasses\Graphics\UIElement.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>

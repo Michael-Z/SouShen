@@ -346,6 +346,12 @@
     <ClInclude Include="..\Classes\View\Sprite\CardSprite.h">
       <Filter>Classes\Model\Sprite</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\View\Sprite\CardNormal.h">
+      <Filter>Classes\Model\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View\Sprite\CardBase.h">
+      <Filter>Classes\Model\Sprite</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\View\Scene\CBaseScene.cpp">
@@ -550,6 +556,12 @@
       <Filter>Classes\Game</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\View\Sprite\CardSprite.cpp">
+      <Filter>Classes\Model\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\View\Sprite\CardNormal.cpp">
+      <Filter>Classes\Model\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\View\Sprite\CardBase.cpp">
       <Filter>Classes\Model\Sprite</Filter>
     </ClCompile>
   </ItemGroup>
