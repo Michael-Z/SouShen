@@ -139,8 +139,11 @@ namespace View
 
 		CardBase *pcard = new CardBase(15, 0);
 		pcard->drawCard();
-		testLayer->addChild(pcard);
+		//testLayer->addChild(pcard->getCardBackGround());
+		//pcard->getCardBackGround()->setPosition(CCPoint(origin.x + 300, origin.y+100));
 
+		pcard->setPosition(CCPoint(origin.x + 300, origin.y+100));
+		testLayer->addChild(pcard);
 	}
 
 	void CTestScene::runThisScene( )

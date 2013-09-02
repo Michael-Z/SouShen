@@ -11,6 +11,9 @@ public:
 public:
 	virtual void drawCard();
 	virtual void clearCard();
+	inline CCSprite* getCardBackGround() { return backGround; }
+	inline UInt8 getCardValue() { return cardValue; }
+	inline UInt8 getCardColor() { return cardColor; }
 protected:
 	CCSprite *backGround;
 protected:

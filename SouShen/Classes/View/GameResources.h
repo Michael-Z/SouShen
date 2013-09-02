@@ -12,6 +12,9 @@ static const char s_pPathDDZMainGame0[]         = "Images/DouDiZhu/DDZ_MainGame0
 static const char s_pPlistDDZMainGame0[]        = "Images/DouDiZhu/DDZ_MainGame.plist";
 static const char s_pNameCardBackGround[]       = "bcardback.png";
 
+//png src
+static const std::string s_pNameListNormalCardRedZi[13] = {"adfdf", "fdafdaf", "fdfda"};
+
 /********************************icon********************************/
 
 

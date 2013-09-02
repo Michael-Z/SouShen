@@ -1,15 +1,14 @@
 #include "CardBase.h"
-
-class CardNormal : public CardBase
+class CardGeneral : public CardBase
 {
 public:
-	CardNormal(UInt8 cValue, UInt8 color);
-	virtual ~CardNormal();
+	CardGeneral(UInt8 cValue, UInt8 color);
+	virtual ~CardGeneral();
 	virtual void drawCard();
 	virtual void clearCard();
 private:
 	CCSprite *pSpriteZi;
 	CCSprite *pSpriteHua;
-	CCSprite *pSpriteGrain;
+	CCSprite *pSpriteGrain;  //back ground
 
 };
