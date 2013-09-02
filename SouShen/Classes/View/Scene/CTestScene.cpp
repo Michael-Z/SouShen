@@ -3,6 +3,7 @@
 #include "Utils/CharacterConver.h"
 #include "../../Game/GameManager.h"
 #include "../GameResources.h"
+#include "../Sprite/CardBase.h"
 namespace View
 {
 	void CTestScene::InitScene()
@@ -135,6 +136,10 @@ namespace View
 		testLayer->addChild(pSprite);
 		pSprite->setAnchorPoint(CCPoint(0, 0));
 		pSprite->setPosition(CCPoint(origin.x + 100, origin.y+100));
+
+		CardBase *pcard = new CardBase(15, 0);
+		pcard->drawCard();
+		testLayer->addChild(pcard);
 
 	}
 

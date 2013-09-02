@@ -8,7 +8,7 @@ public:
 private:
 	CCSprite upNumber;  //number up
 	CCSprite downNumber; //numer down
-	CCSprite down        //
+     //
 };
 
 #endif

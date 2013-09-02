@@ -9,7 +9,8 @@ static const char s_pPathBackGround2[]          = "Images/BackGround/background_
 
 static const char s_pPathBackGround3[]          = "Images/BackGround/Common_BG1_2x.png";
 static const char s_pPathDDZMainGame0[]         = "Images/DouDiZhu/DDZ_MainGame0_2x.png";
-
+static const char s_pPlistDDZMainGame0[]        = "Images/DouDiZhu/DDZ_MainGame.plist";
+static const char s_pNameCardBackGround[]       = "bcardback.png";
 
 /********************************icon********************************/
 
