@@ -355,6 +355,9 @@
     <ClInclude Include="..\Classes\View\Sprite\CardKing.h">
       <Filter>Classes\Model\Sprite</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Utils\MobileLog.h">
+      <Filter>Classes\Utils</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\View\Scene\CBaseScene.cpp">

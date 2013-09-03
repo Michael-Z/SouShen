@@ -14,6 +14,7 @@ static const char s_pNameCardBackGround[]       = "bcardback.png";
 
 //png src
 static const std::string s_pNameListNormalCardRedZi[13] = {"adfdf", "fdafdaf", "fdfda"};
+static const std::string s_pNameListNormalCardBlackZi[13] = {"adfdf", "fdafdaf", "fdfda"};
 
 /********************************icon********************************/
 
