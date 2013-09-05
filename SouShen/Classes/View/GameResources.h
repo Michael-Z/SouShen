@@ -13,9 +13,11 @@ static const char s_pPlistDDZMainGame0[]        = "Images/DouDiZhu/DDZ_MainGame.
 static const char s_pNameCardBackGround[]       = "bcardfront.png";
 
 //png src
-static const std::string s_pNameListNormalCardRedZi[13] = {"adfdf", "fdafdaf", "fdfda"};
-static const std::string s_pNameListNormalCardBlackZi[13] = {"adfdf", "fdafdaf", "fdfda"};
-
+static const std::string s_pNameListCardRedZi[13] = {"adfdf", "fdafdaf", "fdfda"};
+static const std::string s_pNameListCardBlackZi[13] = {"adfdf", "fdafdaf", "fdfda"};
+static const std::string s_pNameListCardHua[4] = {"adfdf", "fdafdaf", "fdfda"};
+static const std::string s_pNameListCardGrain[4] = {"adfdf", "fdafdaf", "fdfda"};
+static const std::string s_pNameListCardKing
 /********************************icon********************************/
 
 
