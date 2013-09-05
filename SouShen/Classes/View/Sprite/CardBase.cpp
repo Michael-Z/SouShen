@@ -13,10 +13,10 @@ CardBase::~CardBase()
 void CardBase::drawCard()
 {
 	CCSpriteFrameCache *cache = CCSpriteFrameCache::sharedSpriteFrameCache();
-	cache->addSpriteFramesWithFile("Images/DouDiZhu/DDZ_MainGame.plist");
-	backGround = CCSprite::createWithSpriteFrameName("bcardback.png");//s_pNameCardBackGround);
+	cache->addSpriteFramesWithFile(s_pPlistDDZMainGame0);
+	backGround = CCSprite::createWithSpriteFrameName(s_pNameCardBackGround);
 	this->addChild(backGround);
-	backGround->autorelease();
+	//backGround->autorelease();
 
 	//cache->addSpriteFramesWithFile("Images/animation/chooserole/mt/chooserole_mt_part1.plist");
 	//backGround=CCSprite::createWithSpriteFrameName("mt_0001.png");

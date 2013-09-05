@@ -28,7 +28,7 @@ void CardNormal::drawCard()
 		else
 		{
 			//Logger
-			MBLOG->prolog(LogError);
+			LOGERROR<<"card Value error";
 			
 		}
 		//pSpriteZi = CCSprite::createWithSpriteFrameName()

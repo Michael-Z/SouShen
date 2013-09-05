@@ -29,9 +29,9 @@ namespace Utils
 	typedef Singleton<MobileLog> _gamemanager;
 }
 
-#define FATALLOG Utils::_gamemanager::instance()->getLog(System::LogFatal)
-#define ERRORLOG Utils::_gamemanager::instance()->getLog(System::LogError)
-#define DEBUGLOG Utils::_gamemanager::instance()->getLog(System::LogDebug)
-#define INFOLOG  Utils::_gamemanager::instance()->getLog(System::LogInfo)
-#define TRACELOG Utils::_gamemanager::instance()->getLog(System::LogTrace)
+#define LOGFATAL Utils::_gamemanager::instance()->getLog()->prolog(System::LogFatal)
+#define LOGERROR Utils::_gamemanager::instance()->getLog()->prolog(System::LogError)
+#define LOGDEBUG Utils::_gamemanager::instance()->getLog()->prolog(System::LogDebug)
+#define LOGINFO  Utils::_gamemanager::instance()->getLog()->prolog(System::LogInfo)
+#define LOGTRACE Utils::_gamemanager::instance()->getLog()->prolog(System::LogTrace)
 #endif
