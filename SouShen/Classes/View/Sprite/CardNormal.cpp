@@ -17,8 +17,8 @@ void CardNormal::setCardZiP()
 {
 	if (pSpriteZi)
 	{
-		//pSpriteZi->setAnchorPoint(CCPoint(0, 0));         //set anchor point
-		//pSpriteZi->setPosition(CCPoint(0,70));            //set position
+		pSpriteZi->setAnchorPoint(CCPoint(0, 0));         //set anchor point
+		pSpriteZi->setPosition(CCPoint(0,100));            //set position
 	}
 }
 
@@ -26,8 +26,8 @@ void CardNormal::setCardHuaP()
 {
 	if (pSpriteHua)
 	{
-		//pSpriteHua->setAnchorPoint(CCPoint(0, 0));         //set anchor point
-		//pSpriteHua->setPosition(CCPoint(0,40));            //set position
+		pSpriteHua->setAnchorPoint(CCPoint(0, 0));         //set anchor point
+		pSpriteHua->setPosition(CCPoint(0,50));            //set position
 	}
 }
 
@@ -35,8 +35,8 @@ void CardNormal::setCardGrainP()
 {
 	if (pSpriteGrain)
 	{
-		//pSpriteGrain->setAnchorPoint(CCPoint(0, 0));         //set anchor point
-		//pSpriteGrain->setPosition(CCPoint(0,40));            //set position
+		pSpriteGrain->setAnchorPoint(CCPoint(0, 0));         //set anchor point
+		pSpriteGrain->setPosition(CCPoint(50,60));            //set position
 	}
 }
 
