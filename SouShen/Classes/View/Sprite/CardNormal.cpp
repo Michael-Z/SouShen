@@ -31,7 +31,7 @@ void CardNormal::drawCard()
 			LOGERROR<<"card Value error";
 			
 		}
-		//pSpriteZi = CCSprite::createWithSpriteFrameName()
+		pSpriteZi = CCSprite::createWithSpriteFrameName()
 	}
 	else if (cardColor == 2 || cardColor == 3)
 	{
