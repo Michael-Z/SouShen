@@ -3,7 +3,8 @@
 #include "Utils/CharacterConver.h"
 #include "../../Game/GameManager.h"
 #include "../GameResources.h"
-#include "../Sprite/CardBase.h"
+//#include "../Sprite/CardBase.h"
+#include "../Sprite/CCard.h"
 namespace View
 {
 	void CTestScene::InitScene()
@@ -144,6 +145,11 @@ namespace View
 
 		pcard->setPosition(CCPoint(origin.x + 300, origin.y+100));
 		testLayer->addChild(pcard);
+
+		CCard card;
+		card.m_nValue = 3;
+		card.m_nColor = 0;
+		testLayer->addChild(card.getCardSprite());
 	}
 
 	void CTestScene::runThisScene( )

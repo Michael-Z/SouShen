@@ -358,6 +358,9 @@
     <ClInclude Include="..\Classes\Utils\MobileLog.h">
       <Filter>Classes\Utils</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\View\Sprite\CCard.h">
+      <Filter>Classes\Model\Sprite</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\View\Scene\CBaseScene.cpp">
