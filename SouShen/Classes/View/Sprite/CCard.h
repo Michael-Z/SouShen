@@ -48,6 +48,7 @@ public:
 			{
 				cardSprite = new CardKing(m_nValue, m_nColor);
 			}
+			return cardSprite;
 		}
 	}
 public:

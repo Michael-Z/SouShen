@@ -148,7 +148,7 @@ namespace View
 
 		CCard card;
 		card.m_nValue = 3;
-		card.m_nColor = 0;
+		card.m_nColor = 1;
 		card.getCardSprite()->setAnchorPoint(CCPoint(0, 0));
 		card.getCardSprite()->setPosition(CCPoint(200, 200));
 		testLayer->addChild(card.getCardSprite());

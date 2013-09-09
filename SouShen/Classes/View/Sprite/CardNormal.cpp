@@ -18,7 +18,7 @@ void CardNormal::setCardZiP()
 	if (pSpriteZi)
 	{
 		pSpriteZi->setAnchorPoint(CCPoint(0, 0));         //set anchor point
-		pSpriteZi->setPosition(CCPoint(0,100));            //set position
+		pSpriteZi->setPosition(CCPoint(8,125));            //set position
 	}
 }
 
@@ -27,7 +27,7 @@ void CardNormal::setCardHuaP()
 	if (pSpriteHua)
 	{
 		pSpriteHua->setAnchorPoint(CCPoint(0, 0));         //set anchor point
-		pSpriteHua->setPosition(CCPoint(0,50));            //set position
+		pSpriteHua->setPosition(CCPoint(6,85));            //set position
 	}
 }
 
@@ -36,7 +36,7 @@ void CardNormal::setCardGrainP()
 	if (pSpriteGrain)
 	{
 		pSpriteGrain->setAnchorPoint(CCPoint(0, 0));         //set anchor point
-		pSpriteGrain->setPosition(CCPoint(50,60));            //set position
+		pSpriteGrain->setPosition(CCPoint(40,30));            //set position
 	}
 }
 
@@ -61,7 +61,7 @@ void CardNormal::drawCard()
 	//draw card zi
 	if (cardColor == 0 || cardColor == 2)
 	{
-		pSpriteZi = CCSprite::createWithSpriteFrameName(s_pNameListNormalCardRedZi[_keyValue].c_str());
+		pSpriteZi = CCSprite::createWithSpriteFrameName(s_pNameListNormalCardBlackZi[_keyValue].c_str());
 		backGround->addChild(pSpriteZi);
 		//set zi position
 		setCardZiP();
@@ -70,7 +70,7 @@ void CardNormal::drawCard()
 	}
 	else if (cardColor == 1 || cardColor == 3)
 	{
-		pSpriteZi = CCSprite::createWithSpriteFrameName(s_pNameListNormalCardBlackZi[_keyValue].c_str());
+		pSpriteZi = CCSprite::createWithSpriteFrameName(s_pNameListNormalCardRedZi[_keyValue].c_str());
 		backGround->addChild(pSpriteZi);
 		//set zi position
 		setCardZiP();
