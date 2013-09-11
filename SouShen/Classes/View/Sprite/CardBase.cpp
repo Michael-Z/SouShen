@@ -21,7 +21,7 @@ void CardBase::drawCard()
 
 	//cache->addSpriteFramesWithFile("Images/animation/chooserole/mt/chooserole_mt_part1.plist");
 	//backGround=CCSprite::createWithSpriteFrameName("mt_0001.png");
-	//this->addChild(backGround);
+	//this->addChild(backGround);			
 }
 
 void CardBase::clearCard()
@@ -44,6 +44,9 @@ void CardBase::onExit()
 
 bool CardBase::ccTouchBegan(CCTouch* touch, CCEvent* event)
 {
+	ccDrawColor4B(255,0,0,255);
+	CCPoint vertices[] = { ccp(0, 0), ccp(50, 50), ccp(100, 50), ccp(100, 100) };
+	ccDrawPoly(vertices, 4, true);
 	CCLog("ccTouchBegan");
 	return true;
 }
