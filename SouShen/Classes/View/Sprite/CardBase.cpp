@@ -4,6 +4,7 @@
 
 CardBase::CardBase(UInt8 cValue, UInt8 color):CCNode(), cardValue(cValue), cardColor(color)
 {
+		CCLog("constrat");
 	drawCard();
 }
 CardBase::~CardBase()
@@ -26,4 +27,31 @@ void CardBase::drawCard()
 void CardBase::clearCard()
 {
 	this->removeChild(backGround, true);
+}
+
+void CardBase::onEnter()
+{
+	CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 0, true);
+	CCNode::onEnter();
+}
+
+void CardBase::onExit()
+{
+	CCDirector::sharedDirector()->getTouchDispatcher()->removeDelegate(this);  
+	CCNode::onExit();  
+}
+
+
+bool CardBase::ccTouchBegan(CCTouch* touch, CCEvent* event)
+{
+	CCLog("ccTouchBegan");
+	return true;
+}
+void CardBase::ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent)
+{
+	CCLog("ccTouchMoved");
+}
+void CardBase::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
+{
+	CCLog("ccTouchEnded");
 }
