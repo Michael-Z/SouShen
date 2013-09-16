@@ -4,7 +4,7 @@
 #include "../../Game/GameManager.h"
 #include "../GameResources.h"
 //#include "../Sprite/CardBase.h"
-#include "../Sprite/CCard.h"
+#include "../Sprite/CCardSprite.h"
 namespace View
 {
 	void CTestScene::InitScene()
@@ -146,12 +146,19 @@ namespace View
 		pcard->setPosition(CCPoint(origin.x + 300, origin.y+100));
 		testLayer->addChild(pcard);
 
-		CCard card;
-		card.m_nValue = 3;
-		card.m_nColor = 1;
-		card.getCardSprite()->setAnchorPoint(CCPoint(0, 0));
-		card.getCardSprite()->setPosition(CCPoint(200, 200));
-		testLayer->addChild(card.getCardSprite());
+		CCardSprite carda;
+		carda.m_nValue = 3;
+		carda.m_nColor = 1;
+		carda.getCardSprite()->setAnchorPoint(CCPoint(0, 0));
+		carda.getCardSprite()->setPosition(CCPoint(200, 200));
+		testLayer->addChild(carda.getCardSprite());
+
+		CCardSprite cardb;
+		cardb.m_nValue = 3;
+		cardb.m_nColor = 1;
+		cardb.getCardSprite()->setAnchorPoint(CCPoint(0, 0));
+		cardb.getCardSprite()->setPosition(CCPoint(400, 200));
+		testLayer->addChild(cardb.getCardSprite());
 	}
 
 	void CTestScene::runThisScene( )
