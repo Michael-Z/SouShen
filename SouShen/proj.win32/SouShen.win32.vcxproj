@@ -164,6 +164,7 @@
     <ClInclude Include="..\Classes\View\Scene\CBaseScene.h" />
     <ClInclude Include="..\Classes\View\Scene\CMenuScene.h" />
     <ClInclude Include="..\Classes\View\Scene\CTestScene.h" />
+    <ClInclude Include="..\Classes\View\Scene\PlayScence.h" />
     <ClInclude Include="..\Classes\View\Sprite\CardBase.h" />
     <ClInclude Include="..\Classes\View\Sprite\CardGeneral.h" />
     <ClInclude Include="..\Classes\View\Sprite\CardKing.h" />
@@ -250,6 +251,7 @@
     <ClCompile Include="..\Classes\View\Scene\CBaseScene.cpp" />
     <ClCompile Include="..\Classes\View\Scene\CMenuScene.cpp" />
     <ClCompile Include="..\Classes\View\Scene\CTestScene.cpp" />
+    <ClCompile Include="..\Classes\View\Scene\PlayScence.cpp" />
     <ClCompile Include="..\Classes\View\Sprite\CardBase.cpp" />
     <ClCompile Include="..\Classes\View\Sprite\CardGeneral.cpp" />
     <ClCompile Include="..\Classes\View\Sprite\CardKing.cpp" />

@@ -98,6 +98,7 @@ void CardGeneral::drawCard()
 		LOGERROR<<"card Color error";
 	}
 }
+
 void CardGeneral::clearCard()
 {
 	this->removeChild(pSpriteZi, true);

@@ -373,6 +373,9 @@
     <ClInclude Include="..\Classes\View\Sprite\CCardSprite.h">
       <Filter>Classes\Model\Sprite</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\View\Scene\PlayScence.h">
+      <Filter>Classes\Model\Scene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\View\Scene\CBaseScene.cpp">
@@ -590,6 +593,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\Common\PlayCard.cpp">
       <Filter>Classes\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\View\Scene\PlayScence.cpp">
+      <Filter>Classes\Model\Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
