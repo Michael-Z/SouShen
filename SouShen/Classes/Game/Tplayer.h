@@ -15,6 +15,22 @@ public:
 public:
 	void setUserData();
 	void getUserData();
+	void getPlayCards();
+	void loadAvatar(int nID);
+	void setLeftTime();
+	void initHandCards();
+	void setHandCards();
+	void setPutCards();
+	void setPutCardsType();
+	void clearPutCards();
+	void showTips();
+	void addChat();
+	void changeSortType();
+	void playSound();
+	void playPutSound();
+	void playShowCardAni();
+protected:
+
 };
 
 
